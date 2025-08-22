@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Wala</title>
+    <link rel="stylesheet" href="12thmath.css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Math Wala: Math Cheatsheet</h1>
+            <p>This consists of all the important formulas needed for JEE Math</p><br>
+        </div>
+    
+        <div class="topic-navigation">
+        <ol>
+                <li><a href="#relations">Relations and Functions</a></li>
+                <li><a href="#trigonometry">Trigonometry</a></li>
+                <li><a href="#matrices">Matrices</a></li>
+                <li><a href="#differentiation">Differentiation</a></li>
+                <li><a href="#integration">Integration</a></li>
+                <li><a href="#vectors">Vector Algebra</a></li>
+                <li><a href="#geometry">Geometry</a></li>
+                <li><a href="#probability">Probability</a></li>
+            </ol>
+        </div><br>
+
+    <div class="topic-section">
+        <div class="page-header">
+            <h4 id="relations">Relations And Functions</h4>
+        </div>
+        <div class="content content-centered">
+            <ol>
+            <li>Relation (R): R ⊆ A × B</li>
+            <li>Domain (D): D = { x ∣ (x, y) ∈ R}</li>
+            <li>Codomain (C): C = B</li>
+            <li>Range (R): R = { y ∣ ∃ x ∈ D, (x, y) ∈ R}</li>
+            <li>Cartesian Product (A × B): A × B = {(a, b) ∣ a ∈ A and b ∈ B}</li>
+            <li>Vertical Line Test: The vertical line test confirms that a relation is a function if each vertical line crosses the graph at most once.</li>
+            <li>One-to-One Function: f(x1​) = f(x2​) ⇒ x1​ = x2​ only</li>
+            <li>Onto Function (Surjective): Every element in the codomain has at least one preimage.</li>
+            <li>Bijective: Both one-to-one and onto.</li>
+            <li>Composition of Functions (f o g): (fog)(x) = f( g(x))</li>
+            </ol>
+        </div>
+    </div><br>
+
+    <div class="topic-section">
+        <div class="page-header">
+            <h4 id="trigonometry">Trigonometry</h4>
+        </div>
+            <div class="content">
+                <div class="side-by-side-container">
+
+                    <div class="formulas-text">
+                        <ul>
+                            <li>
+                                <strong>Tangent & Cotangent Identities</strong>
+                                <ul>
+                                    <li>tan(θ) = sin(θ)/cos(θ)</li>
+                                    <li>cot(θ) = cos(θ)/sin(θ)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Reciprocal Identities</strong>
+                                <ul>
+                                    <li>csc(θ) = 1/sin(θ)</li>
+                                    <li>sec(θ) = 1/cos(θ)</li>
+                                    <li>cot(θ) = 1/tan(θ)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Pythagorean Identities</strong>
+                                <ul>
+                                    <li>sin²(θ) + cos²(θ) = 1</li>
+                                    <li>tan²(θ) + 1 = sec²(θ)</li>
+                                    <li>1 + cot²(θ) = csc²(θ)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Sum and Difference Formulas</strong>
+                                <ul>
+                                    <li>sin(α ± β) = sin(α)cos(β) ± cos(α)sin(β)</li>
+                                    <li>cos(α ± β) = cos(α)cos(β) ∓ sin(α)sin(β)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Double Angle Formulas</strong>
+                                <ul>
+                                    <li>sin(2θ) = 2sin(θ)cos(θ)</li>
+                                    <li>cos(2θ) = cos²(θ) - sin²(θ)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="image-container">
+                        <img src="trig.png" alt="A chart of trigonometric values for common angles">
+                        <p class="caption">Trigonometric values for common angles.</p>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+    <br>
+
+    <div class="topic-section">
+        <div class="page-header">
+            <h4 id="matrices">Matrices</h4>
+        </div>
+        <div class="content content-centered">
+                <ul>
+                    <li>
+                        <strong>Addition and Subtraction of Matrices</strong>
+                        <ul>
+                            <li>A + B = B + A</li>
+                            <li>(A + B) + C = A + (B + C)</li>
+                            <li>k(A + B) = kA + kB</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Multiplication of Matrices</strong>
+                        <ul>
+                            <li>Generally, AB ≠ BA (Not commutative)</li>
+                            <li>(AB)C = A(BC) (Associative Law)</li>
+                            <li>Distributive Law: A(B + C) = AB + AC</li>
+                            <li>Multiplicative Identity: AI = IA = A</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Properties of Transpose of Matrix</strong>
+                        <ul>
+                            <li>(Aᵀ)ᵀ = A</li>
+                            <li>(kA)ᵀ = kAᵀ</li>
+                            <li>(A + B)ᵀ = Aᵀ + Bᵀ</li>
+                            <li>(AB)ᵀ = BᵀAᵀ</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Symmetric & Skew-Symmetric Matrices</strong>
+                        <ul>
+                            <li>Symmetric Matrix: If Aᵀ = A</li>
+                            <li>Skew-Symmetric Matrix: If Aᵀ = -A</li>
+                            <li>For any square matrix A, (A + Aᵀ) is symmetric.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Inverse of a Matrix & its Properties</strong>
+                        <ul>
+                            <li>If AB = BA = I, then B = A⁻¹</li>
+                            <li>(A⁻¹)⁻¹ = A</li>
+                            <li>(AB)⁻¹ = B⁻¹A⁻¹</li>
+                            <li>Important: (A + B)⁻¹ ≠ A⁻¹ + B⁻¹</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Properties of Determinants</strong>
+                        <ul>
+                            <li>det(I) = 1</li>
+                            <li>|Aᵀ| = |A|</li>
+                            <li>|AB| = |A| |B|</li>
+                            <li>|A⁻¹| = 1 / |A|</li>
+                            <li>|kA| = kⁿ|A|, where n is the order of the matrix.</li>
+                        </ul>
+                    </li>
+                </ul>
+        </div>
+    </div><br>
+
+    <div class="topic-section">
+        <div class="page-header">
+            <h4 id="differentiation">Differentiation</h4>
+        </div>
+        <div class="content content-centered">
+                <ul>
+                    <li>
+                        <strong>Exponential and Logarithmic Formulas</strong>
+                        <ul>
+                            <li>d/dx (aˣ) = aˣ ln(a)</li>
+                            <li>d/dx (eˣ) = eˣ</li>
+                            <li>d/dx (logₐ(x)) = 1 / (x ln(a))</li>
+                            <li>d/dx (ln(x)) = 1/x</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Trigonometric Formulas</strong>
+                        <ul>
+                            <li>d/dx (sin(x)) = cos(x)</li>
+                            <li>d/dx (cos(x)) = -sin(x)</li>
+                            <li>d/dx (tan(x)) = sec²(x)</li>
+                            <li>d/dx (cot(x)) = -csc²(x)</li>
+                            <li>d/dx (sec(x)) = sec(x)tan(x)</li>
+                            <li>d/dx (csc(x)) = -csc(x)cot(x)</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Inverse Trigonometric Formulas</strong>
+                        <ul>
+                            <li>d/dx (sin⁻¹(x)) = 1 / √(1 - x²)</li>
+                            <li>d/dx (cos⁻¹(x)) = -1 / √(1 - x²)</li>
+                            <li>d/dx (tan⁻¹(x)) = 1 / (1 + x²)</li>
+                            <li>d/dx (cot⁻¹(x)) = -1 / (1 + x²)</li>
+                            <li>d/dx (sec⁻¹(x)) = 1 / (|x|√(x² - 1))</li>
+                            <li>d/dx (csc⁻¹(x)) = -1 / (|x|√(x² - 1))</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Hyperbolic Formulas</strong>
+                        <ul>
+                            <li>d/dx (sinh(x)) = cosh(x)</li>
+                            <li>d/dx (cosh(x)) = sinh(x)</li>
+                            <li>d/dx (tanh(x)) = sech²(x)</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Chain Rule</strong>
+                        <ul>
+                            <li>dy/dx = (dy/du) × (du/dx)</li>
+                        </ul>
+                    </li>
+                </ul>
+        </div>
+    </div><br>
+
+    <div class="topic-section">
+    <div class="page-header">
+            <h4 id="integration">Integration</h4>
+        </div>
+    <div class="content content-centered">
+            <ul>
+                <li>
+                    <strong>Basic Standard Integrals</strong>
+                    <ul>
+                        <li>∫ xⁿ dx = (xⁿ⁺¹ / (n+1)) + C</li>
+                        <li>∫ (1/x) dx = ln|x| + C</li>
+                        <li>∫ eˣ dx = eˣ + C</li>
+                        <li>∫ sin(x) dx = -cos(x) + C</li>
+                        <li>∫ cos(x) dx = sin(x) + C</li>
+                        <li>∫ sec²(x) dx = tan(x) + C</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>Integrals for Inverse Trigonometric Functions</strong>
+                    <ul>
+                        <li>∫ dx / √(a² - x²) = sin⁻¹(x/a) + C</li>
+                        <li>∫ dx / (a² + x²) = (1/a)tan⁻¹(x/a) + C</li>
+                        <li>∫ dx / (x√(x² - a²)) = (1/a)sec⁻¹(x/a) + C</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>Special Integrals (Advanced Forms)</strong>
+                    <ul>
+                        <li>∫ dx / (x² - a²) = (1/2a) ln|(x-a)/(x+a)| + C</li>
+                        <li>∫ dx / √(x² + a²) = ln|x + √(x² + a²)| + C</li>
+                        <li>∫ √(a² - x²) dx = (x/2)√(a² - x²) + (a²/2) sin⁻¹(x/a) + C</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>Integration by Parts</strong>
+                    <ul>
+                        <li>Rule: ∫ u v dx = u ∫ v dx - ∫ [ (du/dx) ∫ v dx ] dx</li>
+                        <li>Tip: Use the ILATE rule to choose the function 'u'.</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>Properties of Definite Integrals</strong>
+                    <ul>
+                        <li>∫[a to b] f(x) dx = F(b) - F(a)</li>
+                        <li>∫[0 to a] f(x) dx = ∫[0 to a] f(a-x) dx (King's Property)</li>
+                        <li>If f(x) is an odd function, then ∫[-a to a] f(x) dx = 0</li>
+                    </ul>
+                </li>
+            </ul>
+    </div>
+</div><br>
+
+    <div class="topic-section">
+    <div class="page-header">
+            <h4 id="vectors">Vector Algebra</h4>
+        </div>
+    <div class="content content-centered">
+            <ul>
+                <li>
+                    <strong>Basic Concepts</strong>
+                    <ul>
+                        <li>Magnitude: For a⃗ = xî + yĵ + zk̂, |a⃗| = √(x² + y² + z²)</li>
+                        <li>Unit Vector: â = a⃗ / |a⃗|</li>
+                        <li>Direction Cosines: l = cos(α), m = cos(β), n = cos(γ)</li>
+                        <li>Property: l² + m² + n² = 1</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Dot Product (Scalar Product)</strong>
+                    <ul>
+                        <li>Definition: a⃗ · b⃗ = |a⃗| |b⃗| cos(θ)</li>
+                        <li>For Perpendicular Vectors: If a⃗ ⊥ b⃗, then a⃗ · b⃗ = 0</li>
+                        <li>Angle Between Vectors: cos(θ) = (a⃗ · b⃗) / (|a⃗| |b⃗|)</li>
+                        <li>Projection of a⃗ on b⃗: (a⃗ · b⃗) / |b⃗|</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Cross Product (Vector Product)</strong>
+                    <ul>
+                        <li>Definition: a⃗ × b⃗ = (|a⃗| |b⃗| sin(θ)) n̂</li>
+                        <li>For Parallel Vectors: If a⃗ ∥ b⃗, then a⃗ × b⃗ = 0</li>
+                        <li>Area of Parallelogram: |a⃗ × b⃗|</li>
+                        <li>Area of Triangle: ½ |a⃗ × b⃗|</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Scalar Triple Product</strong>
+                    <ul>
+                        <li>Definition: [a⃗ b⃗ c⃗] = (a⃗ × b⃗) · c⃗</li>
+                        <li>Geometric Meaning: Represents the volume of the parallelepiped.</li>
+                        <li>Condition for Coplanarity: Three vectors are coplanar if [a⃗ b⃗ c⃗] = 0.</li>
+                    </ul>
+                </li>
+            </ul>
+    </div>
+</div>
+
+    <div class="topic-section">
+    <div class="page-header">
+            <h4 id="geometry">3D Geometry</h4>
+        </div>
+    <div class="content">
+
+        <!-- Circle Section -->
+        <div class="side-by-side-container">
+            <div class="formulas-text">
+                <ul>
+                    <li><strong>The Circle</strong>
+                        <ul>
+                            <li>Standard Equation: (x - h)² + (y - k)² = r²</li>
+                            <li>Center: (h, k)</li>
+                            <li>Radius: r</li>
+                            <li>General Equation: x² + y² + 2gx + 2fy + c = 0</li>
+                            <li>Center from General: (-g, -f)</li>
+                            <li>Radius from General: √(g² + f² - c)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="image-container">
+                <img src="circle.png" alt="A diagram of a circle" class="shape-image">
+                <p class="caption">A Circle</p>
+            </div>
+        </div>
+
+        <hr style="margin: 25px 0;">
+
+        <!-- Parabola Section -->
+        <div class="side-by-side-container">
+            <div class="formulas-text">
+                <ul>
+                    <li><strong>The Parabola</strong>
+                        <ul>
+                            <li>Standard Equation: y² = 4ax</li>
+                            <li>Vertex: (0, 0)</li>
+                            <li>Focus: (a, 0)</li>
+                            <li>Directrix: x = -a</li>
+                            <li>Length of Latus Rectum: 4a</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="image-container">
+                <img src="parabola.png" alt="A diagram of a parabola" class="shape-image">
+                <p class="caption">A Parabola</p>
+            </div>
+        </div>
+
+        <hr style="margin: 25px 0;">
+
+        <!-- Ellipse Section -->
+        <div class="side-by-side-container">
+            <div class="formulas-text">
+                <ul>
+                    <li><strong>The Ellipse</strong>
+                        <ul>
+                            <li>Standard Equation: x²/a² + y²/b² = 1</li>
+                            <li>Foci: (±c, 0), where c² = a² - b²</li>
+                            <li>Eccentricity: e = c/a (e < 1)</li>
+                            <li>Length of Latus Rectum: 2b²/a</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="image-container">
+                <img src="ellipse.png" alt="A diagram of an ellipse" class="shape-image">
+                <p class="caption">An Ellipse</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <div class="topic-section">
+        <div class="page-header">
+            <h4 id="probability">Permutations and Combinations</h4>
+        </div>
+    <div class="content">
+        <div class="side-by-side-container">
+
+            <div class="formulas-text">
+                <ul>
+                    <li>
+                        <strong>Permutations (Arrangements)</strong>
+                        <ul>
+                            <li>Arranging r from n: nPr = n! / (n-r)!</li>
+                            <li>With identical items: n! / (n₁! n₂!)</li>
+                            <li>In a circle: (n-1)!</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Combinations (Selections)</strong>
+                        <ul>
+                            <li>Selecting r from n: nCr = n! / (r!(n-r)!)</li>
+                            <li>Key Property: nCr = nC(n-r)</li>
+                            <li>Pascal's Rule: nCr + nC(r-1) = (n+1)Cr</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Binomial Distribution</strong>
+                        <ul>
+                            <li>Probability: P(X=r) = nCr · pʳ · qⁿ⁻ʳ</li>
+                            <li>Mean (μ) = np</li>
+                            <li>Variance (σ²) = npq</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="formulas-text">
+                <ul>
+                    <li>
+                        <strong>Basic Probability</strong>
+                        <ul>
+                            <li>Probability of Event E: P(E) = n(E) / n(S)</li>
+                            <li>Complement: P(E') = 1 - P(E)</li>
+                            <li>Addition Rule: P(A U B) = P(A) + P(B) - P(A ∩ B)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Conditional Probability</strong>
+                        <ul>
+                            <li>Definition: P(A|B) = P(A ∩ B) / P(B)</li>
+                            <li>Multiplication Rule: P(A ∩ B) = P(B) · P(A|B)</li>
+                            <li>For Independent Events: P(A ∩ B) = P(A) · P(B)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Bayes' Theorem</strong>
+                        <ul>
+                           <li>P(Ei|A) = [P(Ei) · P(A|Ei)] / P(A)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    
+    </div>
+</body>
+</html>
